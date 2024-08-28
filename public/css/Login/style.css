@@ -1,15 +1,79 @@
+:root {
+    --color-negro: #000000;
+    --color-gris-muy-oscuro: #1a1a1a;
+    --color-gris-oscuro: #333333;
+    --color-gris-medio: #4d4d4d;
+    --color-gris-claro: #666666;
+    --color-gris-muy-claro: #808080;
+    --color-gris-claro-2: #999999;
+    --color-gris-muy-claro-2: #b3b3b3;
+    --color-gris-palido: #cccccc;
+    --color-gris-muy-palido: #e6e6e6;
+    --color-blanco: #ffffff;
+}
+
+
 .gradient-custom-2 {
     /* fallback for old browsers */
     background: #fccb90;
 
-    /*https://agenciapublicadeempleo.sena.edu.co/Paginas/Inicio.aspx/
     background: -webkit-linear-gradient(to right, #1d5fe4, #368fd8, #457af7, #6069e7);
-    
+
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right, #2467ee, #368fd8, #3668dd, #343ecb);
+}
+
+.formulario {
+    background-color: var(--color-gris-medio) !important;
+}
+
+section {
+    background-color: var(--color-gris-muy-oscuro) !important;
+}
+
+.tarjeta {
+    background-color: var(--color-gris-oscuro) !important;
 }
 
 .text-center img {
     width: 160px;
     margin: 50px;
+}
+
+
+::placeholder {
+    background-color: white !important;
+
+}
+
+.boton {
+    display: inline-block;
+    margin-right: 50px !important;
+    margin-left: 30px !important;
+    padding: 10px 20px;
+    font-size: 16px !important;
+    color: white !important;
+    background-color: var(--color-gris-medio) !important;
+    border: none !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.boton:hover {
+    background-color: #0056b3 !important;
+    transition: 300ms !important;
+    border-color: #fff !important;
+    transform: scale(1.1) !important;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.btn:hover {
+    transition: 300ms !important;
+    border-color: #fff !important;
+    transform: scale(1.1) !important;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2) !important;
 }
