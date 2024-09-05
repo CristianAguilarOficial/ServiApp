@@ -1,0 +1,62 @@
+@page {
+    size: auto;
+    /* Permite que el largo sea automático */
+    margin: 0;
+}
+
+body {
+    width: 290mm;
+    /* Ancho de una hoja A4 */
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    /* Asegura que la barra de desplazamiento vertical esté siempre visible */
+}
+
+.container {
+    width: 90%;
+    box-sizing: border-box;
+    /* Ajusta el padding según sea necesario */
+}
+
+.container h1 {
+    text-align: center;
+}
+
+
+p {
+    text-align: center;
+    background-color: aquamarine;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+
+.container_efectivo {
+    display: flex;
+
+}
+
+textarea {
+    width: 180mm;
+    /* Hace que el textarea ocupe todo el ancho del body */
+    box-sizing: border-box;
+    /* Incluye el padding y el borde en el ancho total */
+    padding: 10mm;
+    /* Ajusta el padding según sea necesario */
+}

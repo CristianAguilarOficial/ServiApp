@@ -5,6 +5,8 @@ namespace App\Controllers;
 use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\RESTful\ResourceController;
 use App\Models\MasterModel;
+use Dompdf\Dompdf;
+use Dompdf\Options;
 
 class Prueba extends ResourceController
 {
@@ -18,7 +20,7 @@ class Prueba extends ResourceController
     {
         $masterModel = new MasterModel();
         $dato['master'] = $masterModel->findAll();
-        return view('vistap1' ,$dato);
+        return view('vistap1', $dato);
     }
 
     /**
@@ -50,7 +52,7 @@ class Prueba extends ResourceController
      */
     public function create()
     {
-    
+
         /*$reglas = [
             'cedula' => 'required|max_length[15]',
             'nombre' => 'required|max_length[15]',
@@ -68,10 +70,9 @@ class Prueba extends ResourceController
             'cedula' => trim($post['indetificacion']),
             'nombre' => trim($post['perro1']),
             'apellido' => trim($post['perro2']),
-            
+
         ]);
         return redirect()->to('prueba');
-
     }
 
     /**
@@ -116,7 +117,7 @@ class Prueba extends ResourceController
         }*/
 
         // Obtener datos del formulario
-        $post = $this->request->getPost(['identificacion', 'nombre','apellido']);
+        $post = $this->request->getPost(['identificacion', 'nombre', 'apellido']);
 
 
         $masterModel = new MasterModel();
